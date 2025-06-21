@@ -1,0 +1,146 @@
+/* src/components/ToastStyle.css */
+
+/* Small container around toast and bar */
+.corner-wrapper {
+  width: 250px; /* compact width */
+}
+
+/* Animated loading bar */
+.corner-bar {
+  width: 100%;
+  height: 4px;
+  margin-top: 4px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.corner-bar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: scaleX(0);
+  transform-origin: right; /* for right-to-left animation */
+  animation: grow-left 2s ease-out forwards;
+}
+
+.bar-success::before {
+  background: #28a745; /* green */
+}
+
+.bar-danger::before {
+  background: #dc3545; /* red */
+}
+
+@keyframes grow-left {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+
+/* src/components/ToastStyle.css */
+
+/* Wrapper around toast and bar */
+.corner-wrapper {
+  width: 250px;
+}
+
+/* Loading bar under toast */
+.corner-bar {
+  width: 100%;
+  height: 4px;
+  margin-top: 4px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.corner-bar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  animation: grow-left 2s ease-out forwards;
+}
+
+.bar-success::before {
+  background: #28a745;
+}
+
+.bar-danger::before {
+  background: #dc3545;
+}
+
+@keyframes grow-left {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* src/components/ToastStyle.css */
+.corner-wrapper {
+  width: 250px;
+}
+
+.corner-bar {
+  width: 100%;
+  height: 4px;
+  margin-top: 4px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.corner-bar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  animation: grow-left 2s ease-out forwards;
+}
+
+.bar-success::before {
+  background: #28a745;
+}
+
+.bar-danger::before {
+  background: #dc3545;
+}
+
+@keyframes grow-left {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+
+
+.corner-wrapper {
+  width: 250px;
+}
+
+.corner-bar {
+  width: 100%;
+  height: 4px;
+  margin-top: 4px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+}
+.corner-bar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  animation: grow-left 2s ease-out forwards;
+}
+.bar-success::before { background: #28a745; }
+.bar-danger::before  { background: #dc3545; }
+
+@keyframes grow-left {
+  to { transform: scaleX(1); }
+}
